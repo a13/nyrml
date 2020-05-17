@@ -1,0 +1,13 @@
+* Not Your Regular Mode Line
+
+  #+BEGIN_SRC emacs-lisp
+    (use-package nyrml
+      :custom
+      (nyrml-interval 1) ; in seconds
+      (nyrml-prefix "") ; override default eros "=>"
+      (nyrml-format '("%b %l:%c")) ; see mode-line-format
+      :config
+      (nyrml-mode)
+      :quelpa
+      (nyrml :repo "a13/nyrml" :fetcher github))
+  #+END_SRC
